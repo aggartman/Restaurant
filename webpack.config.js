@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { node } = require('webpack');
 
 module.exports = {
     mode: 'development', 
@@ -12,13 +13,12 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Restaurant',
+            title: 'Mickey\'s Pub',
         }),
     ],
     output: {
-        filename: '[name].bundle.js',
+        filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
-        clean: true,
     },
     module: {
         rules: [
@@ -36,4 +36,10 @@ module.exports = {
             },
         ],
     },
+    resolve: {
+        fallback: {
+          "fs": false,
+          "path": require.resolve("path-browserify")
+        }
+      },
 };

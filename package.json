@@ -1,5 +1,5 @@
 {
-  "name": "restaurant",
+  "name": "mickeyspub",
   "version": "1.0.0",
   "description": "Restaurant page utilizing DOM manipulation",
   "main": "index.js",
@@ -19,12 +19,17 @@
   },
   "homepage": "https://github.com/aggartman/Restaurant#readme",
   "devDependencies": {
-    "webpack": "^5.53.0",
+    "path-browserify": "^1.0.1",
+    "webpack": "^5.57.1",
     "webpack-cli": "^4.8.0"
   },
   "dependencies": {
+    "any-promise": "^1.3.0",
+    "constants-browserify": "^1.0.0",
     "css-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
+    "lodash": "^4.17.21",
+    "polyfills": "^2.1.1",
     "style-loader": "^3.2.1"
   }
 }
