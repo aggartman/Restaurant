@@ -13,11 +13,8 @@
   font: inherit;
   vertical-align: baseline;
   background-color: #23c460;
-}
-
-body {
-  background-image: url("./Shamrocks.png");
   background-size: 50%;
+  background-image: url("./Shamrocks.png");
 }
 
 .title {

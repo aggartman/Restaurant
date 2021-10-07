@@ -13,6 +13,7 @@ document.body.id = 'reset';
 const container = document.createElement('div');
 document.body.appendChild(container);
 container.id = 'content';
+document.body.style.backgroundImage = Shamrocks;
 
 function setBase() { 
     const background = document.createElement('div');
